@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="triangle" class="com.osgo.Triangle" >
+	    <property name="pointA" ref="pointA" />
+	    <property name="pointB" ref="pointB" />
+	    <property name="pointC" ref="pointC" />
+	</bean>
+	    
+	    
+	    <bean name="pointA" class="com.osgo.Point">
+	    		<property name="x" value ="0" />
+	    		<property name="y" value ="0" />  
+		</bean>
+	    
+	    
+	    <bean name="pointB" class="com.osgo.Point">
+	    		<property name="x" value ="-20" />
+	    		<property name="y" value ="0" />  
+		</bean>
+		
+	    
+	    <bean name="pointC" class="com.osgo.Point">
+	    		<property name="x" value ="0" />
+	    		<property name="y" value ="20" />  
+	    </bean>
+	    
+	    <bean class="com.osgo.DisplayNameBeanPostProcessor" />
+	    
+		
+</beans>
